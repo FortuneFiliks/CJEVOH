@@ -1,0 +1,282 @@
+/****START*****/
+    *{
+        margin : 0;
+    	padding : 0;
+    }
+    
+    
+    body{
+    	font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    	overflow-x : hidden;
+    }
+	
+    .nav_section{
+		width : 100%;
+		background-color :#eff6ff;
+		height : 80px;
+		position : fixed;
+		z-index : 9999;
+        box-shadow : 1px 1px 3px 3px #3e3e3e4C;
+		transition : transform 1.5s ease-in-out;
+        top : 0;
+	}		
+
+
+    .nav_section_flex{
+		width : 90%;
+		height : 100%;
+		display : flex;
+		flex-direction : row;
+		justify-content : space-between;
+		align-items : center;
+		margin-left : auto;
+		margin-right : auto;
+	}
+
+    .brand_logo{
+		width : 150px;
+		height : 60px;
+	}
+	
+
+	
+	#menu_bars{
+		font-size : 2rem;
+		color : #002D62;
+		cursor : pointer;
+	}
+	
+	#search_icon{
+		font-size : 2rem;
+		color : #002D62;		
+	}	
+	
+	
+/******************************FIRST SECTION******************************/	
+	.first_section{
+		width : 100%;
+		background-color : #000000;
+		min-height : 50dvh;
+		min-height : 50vh;
+	    position : relative;
+     	   
+	}
+	
+	.first_section_content{
+		width : 100%;
+	    min-height : 50dvh;
+		min-height : 50vh;
+	   display : flex;
+	   align-items : center;
+	   justify-content : center;
+	}
+	
+	.first_section_heading{
+       font-family: PP Editorial New,"ui-serif";
+       font-style: normal;
+       font-weight: 400;
+       line-height: 110%;
+       letter-spacing: -.02em;
+       word-break: break-word;
+       color : #ffffff;
+       font-size : 2.75rem;
+       z-index : 0;
+       position : relative;   
+	}
+	
+	.landscape_img{
+		width : 100px;
+		height : 67px;
+		opacity : 0.5;
+		border-radius : 5px;
+	}
+	
+    .portrait_img{
+		width : 67px;
+		height : 100px;
+		opacity : 0.5;
+		border-radius : 5px;
+	}
+
+    .first_image{
+		position : absolute;
+		left : 0;
+		top : 17%;
+	}
+	
+	.second_image{
+		position : absolute;
+		left : 37%;
+		top : 30%
+	}
+	
+	.third_image{
+	   position : absolute;
+	   top : 34%;
+	   left : 52%;
+       display : none;          
+	}
+	
+	.fourth_image{
+		position : absolute;
+		top : 17%;
+		right : 0;
+	}
+	
+   .fifth_image{
+		position : absolute;
+		bottom : 0;
+		left : 5%;
+	}
+	
+	.sixth_image{
+		position : absolute;
+		bottom : 8%;
+		left : 50%;
+	}
+	
+   .seventh_image{
+		position : absolute;
+		bottom : 8%;
+		left : 80%;
+	}
+
+
+/******************************SECOND SECTION******************************/	
+	.second_section{
+		width : 100%;
+		background-color : #eff6ff;
+		min-height : auto;
+		padding : 4rem 0 4rem 0;
+	}
+	
+	.second_section_content{
+		width : 90%;
+		min-height : auto;
+		margin-left : auto;
+		margin-right : auto
+	}
+	
+	.first_flex{
+		width : 100%;
+		display : flex;
+		flex-direction : column;
+		row-gap : 50px;
+		column-gap : 0;
+		/* align-items : center; */
+		justify-content : center;
+		color : #001f4e;
+		margin : 0 0 50px 0;
+	}
+	
+	.first_flex>div{
+		flex : 1;
+        text-align : justify;
+	}
+	
+	.flex_header{
+		display : flex;
+		flex-direction : row;
+		align-items : baseline;
+		gap : 5px;
+		border-bottom : solid 2px #001f4e;
+	}
+	
+	.header_flag_img{
+		width : 50px;
+		height : 33px;
+		border-radius : 5px;
+		/* border-radius : 5px; */
+		/* display : block; */
+	}
+	.country_name{
+		font-size : 1.5rem;
+		font-weight : 600;
+	}
+	.activities_heading{
+		font-weight : 600;
+		font-size : 1.25rem;
+	}
+	.flex_text p{
+		margin : 5px 0 5px 0;
+	}
+
+
+/******************************THIRD SECTION******************************/	
+	.third_section{
+		width : 100%;
+		background-color : #ffffff;
+		min-height : auto;
+		padding : 4rem 0 4rem 0;
+	}
+	
+	.third_section_content{
+		width : 95%;
+		min-height : auto;
+		margin-left : auto;
+		margin-right : auto;
+		
+	}
+	
+	
+	.undp_section_flex, .unicef_section_flex, .suliver_section_flex{
+	    display : flex;
+        flex-direction : row;
+        align-items : center;	
+        margin : 75px 0 0 0;		
+	}
+	
+    .undp_logo_img, .unicef_logo_img, .suliver_logo_img{
+		width : 100px;
+		height : 100px;
+		
+	}
+	
+	.undp_section_content{
+		width : 100%;
+		margin-top : 50px;
+	}
+	
+	.undp_section_content>p:nth-child(odd){
+		width : 100%;
+		font-size : 1rem;
+		min-height : auto;
+		color : #001f4e;
+		background-color : #f5f5f5;
+		font-weight : 600;
+		padding : 15px 25px 15px 25px;
+	}
+	
+	.undp_section_content>p:nth-child(even){
+		width : 100%;
+		font-size : 1rem;
+		min-height : auto;
+		color : #001f4e;
+		background-color : #ffffff;
+		font-weight : 600;
+		padding : 25px 25px 25px 25px;
+	}	
+
+    .undp_heading, .suliver_heading{
+		font-size : 1.35rem;
+		font-weight : 700;
+	}
+	
+	.unicef_section_content{
+		margin : 30px 0 0 0;
+	}
+	
+	.unicef_section_content>p{
+		font-size : 1rem;
+	}
+	
+	
+	.unicef_section_content li{
+		font-size : 1rem;
+	}
+	
+	.unicef_list{
+		width : 90%;
+		margin-left : auto;
+		margin-right : auto;
+	}
