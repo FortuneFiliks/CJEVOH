@@ -1,0 +1,307 @@
+@media(min-width: 640px) and (hover: none) and (pointer: coarse){
+/****START*****/
+    *{
+        margin : 0;
+    	padding : 0;
+    }
+    
+    body{
+    	font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    	overflow-x : hidden;
+		background-color : #f2f2f2;
+    }
+	
+	
+	
+/* =========================
+   MAIN HERO CONTAINER
+========================= */
+
+.hero{
+  position:relative;
+  width:100%;
+  min-height:40dvh;
+  min-height:40vh;
+  overflow:hidden;
+  isolation:isolate;
+
+  background:
+  radial-gradient(
+    circle at top,
+    rgba(20,20,40,0.35),
+    transparent 45%
+  ),
+  #020202;
+}
+
+
+.first_sectiion_content{
+  min-height:40dvh;
+  min-height:40vh;	
+}
+/* =========================
+   DIAGONAL SHAPES WRAPPER
+========================= */
+
+.bg-shapes{
+  position:absolute;
+  inset:0;
+  z-index:0;
+}
+
+/* =========================
+   BASE SHAPE STYLE
+========================= */
+
+.shape{
+  position:absolute;
+
+  width:340px;
+  height:170vh;
+
+  top:-35vh;
+
+  transform:rotate(35deg);
+
+  clip-path:polygon(
+    35% 0%,
+    100% 0%,
+    65% 100%,
+    0% 100%
+  );
+
+  background:
+  linear-gradient(
+    to bottom,
+    rgba(88, 95, 255, 0.14),
+    rgba(88, 95, 255, 0.02)
+  );
+
+  filter:blur(1px);
+
+  mix-blend-mode:screen;
+
+  opacity:0.22;
+}
+
+/* =========================
+   INDIVIDUAL VARIATIONS
+========================= */
+
+.shape-1{
+  left:-5%;
+  width:100px;
+  /* opacity:0.10; */
+  opacity:0.40;
+}
+
+.shape-2{
+  left:10%;
+  width:100px;
+  /* opacity:0.14; */
+  opacity:0.40;
+}
+
+.shape-3{
+  left:28%;
+  width:150px;
+  /* opacity:0.20; */
+  opacity:0.40;
+}
+
+.shape-4{
+  left:48%;
+  width:150px;
+  /* opacity:0.11; */
+  opacity:0.40;
+}
+
+.shape-5{
+  left:70%;
+  width:100px;
+  /* opacity:0.16; */
+  opacity:0.40;
+}
+
+.shape-6{
+  left:88%;
+  width:100px;
+  /* opacity:0.08; */
+  opacity:0.40;
+}
+
+/* =========================
+   EXTRA DEPTH LAYER
+========================= */
+
+.shape::after{
+  content:"";
+
+  position:absolute;
+  inset:0;
+
+  background:
+  linear-gradient(
+    to bottom,
+    rgba(255,255,255,0.08),
+    transparent 70%
+  );
+
+  opacity:0.25;
+}
+
+/* =========================
+   SUBTLE NOISE TEXTURE
+========================= */
+
+.hero::before{
+  content:"";
+
+  position:absolute;
+  inset:0;
+
+  background-image:
+  radial-gradient(
+    rgba(255,255,255,0.03) 1px,
+    transparent 1px
+  );
+
+  background-size:4px 4px;
+
+  opacity:0.08;
+
+  pointer-events:none;
+
+  z-index:1;
+}
+
+/* =========================
+   DEMO CONTENT
+========================= */
+
+.content{
+  position:relative;
+  z-index:5;
+
+  text-align:center;
+}
+
+ h1{
+  font-size: 4rem;
+  font-weight:700;
+  /* letter-spacing:-0.05em; */
+  color : #ffffff;
+ font-family: Montserrat; 
+}
+
+
+
+/* =========================
+   OPTIONAL GLOW
+========================= */
+
+.glow{
+  position:absolute;
+
+  width:700px;
+  height:700px;
+
+  background:
+  radial-gradient(
+    circle,
+    rgba(60,80,255,0.18),
+    transparent 70%
+  );
+
+  top:-250px;
+  right:-200px;
+
+  filter:blur(40px);
+
+  z-index:0;
+}	
+
+
+.heading_content{
+	display : flex;
+	/* flex-direction :column; */
+	align-items : center;
+	justify-content : center;
+	width : 100%;
+    min-height:40dvh;
+    min-height:40vh;
+}
+
+/******************************SECOND SECTION******************************/
+
+    #second_section{
+        width : 100%;
+		min-height : auto;
+		min-height : auto;
+		background : #f2f2f233;
+		padding : 6rem 0 0 0;
+    }
+
+    #second_section .second_section_content{
+        width : 98%;
+		margin-left : auto;
+		margin-right : auto;		
+    }		
+	
+	#second_section .second_section_flex{
+		width : 100%;
+		min-height : auto;
+		min-height : auto;
+		display : flex;
+		flex-direction : column;
+		align-items : center;
+        gap : 30px;
+		margin : 0 0 0 0;
+	}
+
+   .second_section_flex>div{
+	   
+		flex : none;
+		width : 100%;
+		
+	}
+	.flex_item_image{
+	     width : 100%;	
+		 height : auto;
+		border-radius : 25px;
+	}
+	
+	.flex_item_text_content{
+		color :#001F4E;
+		width : 96%;
+		margin : 0 auto 0 auto;
+		transform : translateY(-75px);
+		border-radius : 25px;
+		padding : 15px;
+		height : 150px;
+		background : #e5e5e5;
+	}
+	
+	.flex_item_link{
+		color :#001F4E;
+	}
+	
+	.flex_item_link:hover{
+	    color :#600527;	
+	}
+	
+	.question_heading{
+		font-size : 1.3rem;
+		font-weight : 700;
+	}
+	
+	.question_answer{
+		font-size : 1.12rem;
+	}
+
+
+
+
+
+/***********************************END***********************************/
+}	
