@@ -36,7 +36,7 @@
 		flex-direction :column-reverse;
         min-height : auto;
 	    min-height : auto;	
-        width : 95%;
+        width : 90%;
         margin : 0 auto 0 auto;		
 	    justify-content : center;
 		padding : 5rem 0 5rem 0;
@@ -53,7 +53,7 @@
 	   border-top-left-radius :  15%;
 	   border-bottom-right-radius : 15%;
 	   border-bottom-left-radius : 15%;	
-       transform : translateX(5%);	   
+       transform : translateX(2.5%);	   
 	}
 	
 	.first_section_heading{
